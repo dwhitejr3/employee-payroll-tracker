@@ -5,16 +5,19 @@ const addEmployeesBtn = document.querySelector('#add-employees-btn');
 // Collect employee data
 const collectEmployees = function() {
   // TODO: Get user input to create and return an array of employee objects
-  prompt("Enter Employees First name");
-   if (collectEmployees !== null) {
-    prompt("Enter Employees Last Name");
+  let firstName = prompt("Enter Employees First name");
+  if (!firstName) {
+    return;
+  }
+  let lastName = prompt("Enter Employees Last Name");
+  let salary = prompt("Enter Employees Salary");
 
-    // if (collectEmployees !=== null) {
-    //   prompt("Enter Employees salary");
-      
-    }
+
+
+  let dataStore =[firstName,lastName,salary];
+  return dataStore;
   
-   }
+   
    
    }
   
